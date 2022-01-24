@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #6246f9;
+    width: 100%;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    overflow-x: hidden;
+    width: 90%;
+    padding: 0px;
+    justify-content: center;
+    align-content: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+}
+nav .logo a {
+    color: #6246f9;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo {
+    background-color: #fff;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+nav ul li a {
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.signIn {
+    background-color: #fff;
+    height: inherit;
+    margin-left: 30px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.signIn a {
+    font-size: 30px;
+    font-weight: 600;
+}
+.signin_link_text {
+    color: #6246f9;
+}
+.home_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+.hero_text {
+    text-align: left;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 500;
+    width: 600px;
+}
+.hero_style {
+    background-color: #fff;
+    color: #6246f9;
+    padding: 0px;
+}
+.hero_img img {
+    width: 650px;
+}
+.login_form_container,
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login_form_container form {
+    margin-top: 30px;
+    border: 5px solid #e5e5e5;
+    border-width: 7px;
+    border-radius: 7px;
+    padding: 30px;
+    flex-direction: row;
+    display: flex;
+}
+.login_form_container {
+    background-color: #7258ff;
+    position: absolute;
+    right: 100px;
+    z-index: 10;
+    width: 380px;
+    height: 450px;
+    border-radius: 10px;
+    top: -600px;
+    transition: ease-in;
+}
+
+.login_form_view {
+    transform: translateY(700px);
+}
+.login_icon {
+    width: 160px;
+}
+.login_form_btn {
+    width: 40px;
+    position: relative;
+    top: 3px;
+    right: -10px;
+}
+.staff_form_input {
+    width: 200px !important;
+    height: 43px;
+    padding-left: 20px !important;
+    font-size: 20px !important;
+    border-radius: 10px;
+    border: none;
+    background-color: #e5e5e5 !important;
+    margin-top: 10px;
+}
+
+.project_items {
+    margin-bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 13px;
+}
+.project_img {
+    width: 782px;
+    height: 462px;
+    border-radius: 8px;
+}
+.project_details_container {
+    height: 462px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 290px;
+}
+.projects_page {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.projects_nav {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: #e0e0e0;
+    margin: 0px;
+    height: 300px;
+    border-radius: 13px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.project_details_container_top {
+    margin-top: -20px;
+}
+.project_details_container_top h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+.project_detsils_tag {
+    color: #000 !important ;
+    font-size: 20px;
+}
+.project_details_container_top address {
+    color: #5a5a5a !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.project_details_container_top p {
+    color: #5a5a5a !important;
+    font-weight: 400;
+    font-size: 20px;
+}
+.project_price_tag {
+    font-size: 45px;
+    font-weight: bold;
+}
+.project_price {
+    font-size: 120px;
+    font-weight: normal;
+    margin-top: -40px;
+    margin-left: -10px;
+    margin-bottom: -28px;
+}
+.about_page {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 500px;
+}
+.about_container {
+    width: 750px;
+    background-color: #272d2e;
+    border-radius: 17px;
+    padding: 50px;
+    color: #fff;
+    font-size: 25px;
+}
+.about_us_heading {
+    font-size: 90px;
+    margin-top: -20px;
+    font-weight: normal;
+}
+.about_text {
+    margin-top: 20px;
+}
+.about_us_content,
+.about_text {
+    color: #c2c2c2 !important;
+}
+.contact_container,
+.contact_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.contact_container {
+    width: 500px;
+    padding: 50px;
+    background-color: #4a4f50;
+    border-radius: 17px;
+}
+.contact_container form {
+    border: 5px solid #e5e5e5;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.form_icon {
+    width: 180px;
+}
+input[type="text"],
+input[type="email"] {
+    background-color: #e5e5e5;
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 8.5px;
+    border: none;
+    margin: 5px;
+}
+.input:focus {
+    border-color: red;
+    border: 30px;
+}
+.staff_portal {
+}
+.greeting_text {
+    font-size: 15px;
+    color: #767676;
+}
+.greeting_name {
+    color: #000;
+}
+.greeting_text p a {
+    color: #000;
+    text-decoration: none;
+}
+.portal_container {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.portal_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.projects_review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.projects_review_item {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    width: 250px;
+    height: 180px;
+    background-color: #eeeeee;
+}
+.review_heading {
+    font-size: 30px;
+    font-weight: 500;
+}
+.review_content {
+    margin-top: -15px;
+    font-size: 70px;
+}
+.initiate {
+    margin-top: 80px;
+    color: #eeeeee;
+    background-color: #1d1f1f;
+    width: 100%;
+    height: 90px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+}
+.initiate_tab {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.view_initiate_tab {
+    display: flex;
+}
+.initiate_tab form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1f1f;
+    padding: 30px;
+    border-radius: 10px;
+}
+.initiate_form .initiate_project_title {
+    height: 80px;
+    width: 400px;
+    font-size: 30px;
+}
+.initiate_form input[type="text"]::placeholder {
+    color: rgb(235, 235, 235);
+}
+.initiate_form input[type="text"] {
+    width: 400px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #a5a5a5;
+}
+.initiate_form input[type="file"] {
+    width: 170px;
+    background-color: #a5a5a5;
+    padding: 10px 5px;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 5px;
+}
+.initiate_buttom {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.initiate_project_btn {
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    margin-left: 24px;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 5px;
+}
+.portal_right {
+    width: 100%;
+    margin-left: 50px;
+    background-color: ;
+}
+.ongoing_projects_list_container {
+    overflow-y: scroll;
+}
+.ongoing_projects_container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #eeeeee;
+    padding: 30px;
+    height: 100%;
+}
+.ongoing_projects_heading {
+    font-size: 43px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.ongoing_projects_list_item {
+    margin-bottom: 50px;
+    width: 900px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.project_title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.project_item {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 20px;
+}
+.project_resource {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    padding: 3px 15px 5px 15px;
+    background-color: #eeeeee;
+    color: #000;
+    line-height: 40px;
+    border-radius: 50px;
+}
+.project_key_value {
+    background-color: #eee;
+    width: 600px;
+    padding: 2px 10px 2px;
+    height: inherit;
+}
+
+.project_state_left {
+    display: flex;
+}
+.resources_value_container {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.arrow_icon {
+    width: 20px;
+    margin-right: 15px;
+}
+.currrent_progress_tab {
+    height: 30px !important;
+    font-size: 20px !important;
+    padding: 0px !important;
+    margin: 0 !important;
+    background-color: inherit !important;
+}
+.currrent_progress_tab::placeholder {
+    color: #000;
+    font-size: 20px;
+}
+.project_state_right {
+    justify-content: space-between;
+    display: flex;
+}
